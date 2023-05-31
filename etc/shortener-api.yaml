@@ -1,0 +1,18 @@
+Name: shortener-api
+Host: 0.0.0.0
+Port: 8888
+
+ShortUrlDB:
+  DSN: root:123456@tcp(127.0.0.1:3306)/short?charset=utf8&parseTime=True&loc=Local
+
+Sequence:
+  DSN: root:123456@tcp(127.0.0.1:3306)/short?charset=utf8&parseTime=True&loc=Local
+
+BaseString: 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+ShortUrlBlackList: ["version", "fuck", "stupid", "convert", "health", "api", "css", "rss"]
+
+ShortDomain: zonzeeli.cn
+
+CacheRedis:
+  - Host: 127.0.0.1:6379
